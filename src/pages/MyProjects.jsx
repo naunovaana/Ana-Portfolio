@@ -32,7 +32,7 @@ export default function MyProjects() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-widest mb-6 ml-10 pb-10 px-16 py-5 text-center">
                 Latest Projects
             </h1>
-            <div className="flex flex-col lg:flex-row justify-between gap-6 py-10 px-7">
+            <div className="flex flex-wrap justify-center gap-6 py-10">
                 {knowledgeData.map((item, index) => (
                     <ProjectsCard key={index} {...item} />
                 ))}

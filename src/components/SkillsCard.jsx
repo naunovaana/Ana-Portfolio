@@ -5,7 +5,7 @@ export default function SkillsCard({title, paragraph, image}) {
             <img
                 src={image}
                 alt={title}
-                className="w-full h-32 sm:h-40 object-cover rounded-t-lg"
+                className="w-full h-48 sm:h-56 object-cover rounded-t-lg"
             />
             <h1 className="text-charcoal text-xl sm:text-2xl font-semibold mt-4 py-2">
                 {title}
