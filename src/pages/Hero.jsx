@@ -17,7 +17,7 @@ export default function Hero() {
                     </h1>
                 </div>
                 <div
-                    className="flex justify-between flex-col lg:flex-row text-xl pt-9 px-2 italic items-center lg:space-y-0 space-y-4">
+                    className="flex justify-between flex-col lg:flex-row text-xl pt-4 px-2 italic items-center lg:space-y-0 space-y-4">
                     <div className="text-center lg:text-left w-full lg:w-[30%]">
                         <p>
                             Driven by curiosity and fueled by creativity. I love turning complex problems into elegant
