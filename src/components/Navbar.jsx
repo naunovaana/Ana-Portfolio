@@ -17,7 +17,7 @@ export default function Navbar() {
     return (
         <nav className="bg-charcoal text-warmWhite px-6">
             <div className="flex justify-between items-center max-w-7xl mx-auto">
-                <img src="/logo_navbar.png" alt="ana" className="w-[90px] h-[90px] object-contain"/>
+                <img src="/logo_navbar.png" alt="ana" className="w-[80px] h-[80px] object-contain"/>
 
                 {/* Desktop */}
                 <ul className="hidden md:flex space-x-8 text-lg">

@@ -29,11 +29,11 @@ export default function MyKnowledge() {
     ];
 
     return (
-        <div className="w-full flex flex-col items-center px-4 py-8 bg-movie-poster lg:bg-no-repeat lg:bg-cover">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal lg:text-warmWhite tracking-widest mb-6 pb-10 text-center">
+        <div className="w-full flex flex-col items-center px-2 py-10 bg-movie-poster lg:bg-no-repeat lg:bg-cover">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-widest mb-6 pb-10 text-center">
                 My Knowledge
             </h1>
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-wrap justify-center gap-4">
                 {knowledgeData.map((item, index) => (
                     <SkillsCard key={index} {...item} />
                 ))}

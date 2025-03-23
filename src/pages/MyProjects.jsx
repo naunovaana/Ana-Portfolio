@@ -29,7 +29,7 @@ export default function MyProjects() {
 
     return (
         <div className="flex items-center flex-col p-8 py-5 pb-36 bg-walpaper md:bg-cover bg-center bg-wave">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-charcoal lg:text-rose tracking-widest mb-6 ml-10 pb-10 px-16 py-5 text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-widest mb-6 ml-10 pb-10 px-16 py-5 text-center">
                 Latest Projects
             </h1>
             <div className="flex flex-col lg:flex-row justify-between gap-6 py-10 px-7">
