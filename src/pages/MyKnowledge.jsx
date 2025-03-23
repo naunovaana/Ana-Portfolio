@@ -33,7 +33,7 @@ export default function MyKnowledge() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-widest mb-6 pb-10 text-center">
                 My Knowledge
             </h1>
-            <div className="flex flex-wrap justify-start gap-6">
+            <div className="flex flex-col lg:flex-row justify-between gap-6">
                 {knowledgeData.map((item, index) => (
                     <SkillsCard key={index} {...item} />
                 ))}
