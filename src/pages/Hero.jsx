@@ -31,7 +31,7 @@ export default function Hero() {
                         <div
                             className="bg-rose hover:bg-olive px-6 py-2 rounded-b-full flex justify-center text-charcoal text-lg border border-charcoal w-full sm:w-[60%] md:w-[50%]">
                             <a
-                                href="/src/assets/AnaNaunova_CV_2025.pdf"
+                                href="/AnaNaunova_CV_2025.pdf"
                                 download="AnaNaunova_CV_2025.pdf"
                                 className="flex items-center justify-center gap-2"
                             >
