@@ -1,7 +1,7 @@
 export default function SkillsCard({title, paragraph, image}) {
     return (
         <div
-            className="bg-peach-gradient p-4 rounded-lg shadow-lg w-full sm:w-[300px] md:w-[330px] 2xl:w-[400px] overflow-hidden flex flex-col items-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:ring-4 hover:ring-rose-300 sm:hover:scale-105 sm:hover:shadow-2xl sm:hover:ring-4">
+            className="bg-peach-gradient p-4 rounded-lg shadow-lg w-full sm:w-[300px] lg:w-[230px] xl:w-[300px] 2xl:w-[400px] overflow-hidden flex flex-col items-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:ring-4 hover:ring-rose-300">
             <img
                 src={image}
                 alt={title}
