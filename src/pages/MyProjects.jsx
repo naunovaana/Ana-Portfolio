@@ -28,18 +28,16 @@ export default function MyProjects() {
     ];
 
     return (
-        <div className="flex flex-col items-center p-8 py-5 pb-36 bg-walpaper md:bg-cover bg-center bg-wave">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-widest mb-6 pb-10 px-16 py-5 text-center">
+        <div className="flex flex-col items-center px-2  bg-peach  ">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-widest mb-6 mt-16 pb-10 text-center">
                 Latest Projects
             </h1>
-
-            {/* Flexbox Layout with Wrapping */}
-            <div className="flex flex-wrap justify-center gap-6 w-full ">
-                {knowledgeData.map((item, index) => (
-                    <div key={index}>
-                        <ProjectsCard {...item} />
-                    </div>
-                ))}
+            <div className="flex justify-center w-full pb-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-screen-2xl">
+                    {knowledgeData.map((item, index) => (
+                        <ProjectsCard key={index} {...item} />
+                    ))}
+                </div>
             </div>
         </div>
     );
