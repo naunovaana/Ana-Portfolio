@@ -6,12 +6,12 @@ export default function SkillsCard({title, paragraph, icon}) {
             <div className="w-20 h-20 flex items-center justify-center mt-4">
                 {icon}
             </div>
-            <h1 className="text-charcoal text-xl sm:text-2xl font-semibold mt-4 py-2">
+            <h1 className="text-charcoal text-xl sm:text-2xl font-semibold mt-4 py-2 text-center">
                 {title}
             </h1>
             <p className="text-olive mt-2 text-lg sm:text-xl pb-4 italic">
                 {paragraph}
             </p>
         </div>
-    );
+);
 }

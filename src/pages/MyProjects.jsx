@@ -25,15 +25,21 @@ export default function MyProjects() {
             paragraph: "This is a project for events in Kochani and its area and I worked on it during my internship.",
             image: "/sutlijash.png",
         },
+        {
+            title: "Python Analytics",
+            paragraph: "Data analysis project using Jupyter Notebook with NumPy, Pandas, and Seaborn for data cleaning, visualization, and insights.",
+            image: "/report.png",
+            link: "https://drive.google.com/file/d/1l0TDfnLa_zVIEqPtFQYTseSqhraiYiJO/view?usp=sharing"
+        }
     ];
 
     return (
-        <div className="flex flex-col items-center px-2  bg-peach  ">
+        <div className="flex flex-col items-center px-2  bg-peach">
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-widest mb-6 mt-16 pb-10 text-center">
                 Latest Projects
             </h1>
             <div className="flex justify-center w-full pb-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-screen-2xl">
+                <div className="flex flex-wrap justify-center gap-6 w-full px-4">
                     {knowledgeData.map((item, index) => (
                         <ProjectsCard key={index} {...item} />
                     ))}
