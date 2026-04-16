@@ -1,50 +1,56 @@
 import ProjectsCard from "../components/ProjectsCard.jsx";
 
 export default function MyProjects() {
-    const knowledgeData = [
-        {
-            title: "Portfolio Website",
-            paragraph: "This is the code for the resume project you are currently viewing.",
-            image: "/diary.png",
-            link: "https://github.com/naunovaana/Ana-Portfolio",
-        },
-        {
-            title: "My Doctor",
-            paragraph: "This project is about finding the best doctor in Macedonia that fulfills your needs.",
-            image: "/mydoctor.png",
-            link: "https://github.com/naunovaana/My-Doctor",
-        },
-        {
-            title: "Book shop",
-            paragraph: "This project is about developing a website for an Ecommerce Shop(Book Shop).",
-            image: "/bookshop.png",
-            link: "https://github.com/naunovaana/Book-Shop",
-        },
-        {
-            title: "Sutlijash",
-            paragraph: "This is a project for events in Kochani and its area and I worked on it during my internship.",
-            image: "/sutlijash.png",
-        },
-        {
-            title: "Python Analytics",
-            paragraph: "Data analysis project using Jupyter Notebook with NumPy, Pandas, and Seaborn for data cleaning, visualization, and insights.",
-            image: "/report.png",
-            link: "https://drive.google.com/file/d/1l0TDfnLa_zVIEqPtFQYTseSqhraiYiJO/view?usp=sharing"
-        }
-    ];
+  const projects = [
+    {
+      title: "Portfolio Website",
+      paragraph:
+        "A personal portfolio built with React and Tailwind showcasing my projects and skills.",
+      link: "https://github.com/naunovaana/Ana-Portfolio",
+    },
+    {
+      title: "My Doctor",
+      paragraph:
+        "A platform for finding and filtering doctors in Macedonia based on user needs.",
+      link: "https://github.com/naunovaana/My-Doctor",
+    },
+    {
+      title: "Book Shop",
+      paragraph:
+        "An e-commerce book store with product listing and cart functionality.",
+      link: "https://github.com/naunovaana/Book-Shop",
+    },
+    {
+      title: "Sutlijash",
+      paragraph:
+        "Internship project for event management in Kochani with dynamic content handling.",
+      link: null,
+    },
+    {
+      title: "Python Analytics",
+      paragraph:
+        "Data analysis project using Python, Pandas, NumPy, and visualization tools.",
+      link: "https://drive.google.com/file/d/1l0TDfnLa_zVIEqPtFQYTseSqhraiYiJO/view",
+    },
+  ];
 
-    return (
-        <div className="flex flex-col items-center px-2  bg-peach">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-widest mb-6 mt-16 pb-10 text-center">
-                Latest Projects
-            </h1>
-            <div className="flex justify-center w-full pb-20">
-                <div className="flex flex-wrap justify-center gap-6 w-full px-4">
-                    {knowledgeData.map((item, index) => (
-                        <ProjectsCard key={index} {...item} />
-                    ))}
-                </div>
-            </div>
+  return (
+    <section className="w-full py-28 bg-[#F7EFEA] text-black">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12">
+        {/* heading */}
+        <h2 className="font-poppins text-4xl lg:text-5xl font-semibold text-center mb-4">
+          Latest Projects
+        </h2>
+
+        <div className="w-16 h-[2px] bg-white/20 mx-auto mb-14"></div>
+
+        {/* grid */}
+        <div className="flex flex-wrap justify-center gap-6">
+          {projects.map((item, index) => (
+            <ProjectsCard key={index} {...item} />
+          ))}
         </div>
-    );
+      </div>
+    </section>
+  );
 }

@@ -1,17 +1,20 @@
-export default function SkillsCard({title, paragraph, icon}) {
-    return (
-        <div
-            className="bg-peach-gradient p-4 rounded-lg shadow-lg w-full sm:w-[300px] lg:w-[230px] xl:w-[300px] 2xl:w-[400px] overflow-hidden flex flex-col items-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:ring-4 hover:ring-rose-300">
+export default function SkillsCard({ title, paragraph, icon }) {
+  return (
+    <div className="bg-[#F3E6DD] text-[#1f1f1f] p-6 rounded-2xl w-full sm:w-[300px] lg:w-[260px] xl:w-[300px] transition-all duration-300 shadow-md hover:shadow-2xl hover:-translate-y-2 border border-black/10">
+      {/* ICON */}
+      <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4 opacity-90">
+        {icon}
+      </div>
 
-            <div className="w-20 h-20 flex items-center justify-center mt-4">
-                {icon}
-            </div>
-            <h1 className="text-charcoal text-xl sm:text-2xl font-semibold mt-4 py-2 text-center">
-                {title}
-            </h1>
-            <p className="text-olive mt-2 text-lg sm:text-xl pb-4 italic">
-                {paragraph}
-            </p>
-        </div>
-);
+      {/* TITLE */}
+      <h2 className="text-xl font-poppins font-semibold text-center mb-3">
+        {title}
+      </h2>
+
+      {/* TEXT */}
+      <p className="text-sm lg:text-base font-roboto text-center leading-relaxed text-black/80">
+        {paragraph}
+      </p>
+    </div>
+  );
 }

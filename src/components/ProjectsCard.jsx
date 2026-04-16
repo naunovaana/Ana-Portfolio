@@ -1,28 +1,36 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faArrowUpFromBracket} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
 
-export default function ProjectsCard({image, paragraph, title, link}) {
-    return (
-        <div className="relative group rounded-lg w-full  max-w-[400px] min-h-[400px] lg:h-[470px] border-black">
-            <div
-                className="absolute inset-0 bg-cover bg-center object-cover rounded-lg"
-                style={{backgroundImage: `url(${image})`}}>
-            </div>
-            <a href={link} target="_blank" rel="noopener noreferrer">
-                <div
-                    className="rounded-lg absolute inset-0 bg-charcoal/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center text-center p-6 z-10">
-                    <h1 className="text-olive text-2xl font-bold mb-2">
-                        {title} <FontAwesomeIcon icon={faArrowUpFromBracket} className="w-5 h-5"/>
-                    </h1>
-                    <p className="text-olive text-xl italic flex items-center gap-2">
-                        {paragraph}
-                    </p>
-                </div>
-            </a>
-            <div className="invisible p-6">
-                <h1 className="text-2xl font-semibold">{title}</h1>
-                <p className="text-xl italic">{paragraph}</p>
-            </div>
-        </div>
-    );
+export default function ProjectsCard({ title, paragraph, link }) {
+  return (
+    <div className="w-full max-w-[340px] bg-[#D57B63]/25 border border-[#D57B63]/40 rounded-2xl p-6 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 flex flex-col justify-between">
+      {/* CONTENT */}
+      <div>
+        <h3 className="font-poppins text-xl font-semibold mb-3 text-[#1C1A20]">
+          {title}
+        </h3>
+
+        <p className="font-roboto text-sm lg:text-base text-[#1C1A20]/70 leading-relaxed">
+          {paragraph}
+        </p>
+      </div>
+
+      {/* LINK */}
+      {link ? (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 text-sm font-poppins text-[#1C1A20] hover:opacity-70 transition"
+        >
+          View Project
+          <FontAwesomeIcon icon={faArrowUpFromBracket} />
+        </a>
+      ) : (
+        <span className="mt-6 text-sm text-[#1C1A20]/40 font-poppins">
+          No link available
+        </span>
+      )}
+    </div>
+  );
 }
