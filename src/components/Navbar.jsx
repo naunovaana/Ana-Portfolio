@@ -44,21 +44,21 @@ export default function Navbar() {
           aria-label="Toggle Menu"
         >
           {isOpen ? (
-            <FontAwesomeIcon
-              icon={faTimes}
-              size="lg"
-              className="text-warmWhite"
-            />
+            <FontAwesomeIcon icon={faTimes} size="lg" className="text-white" />
           ) : (
-            <FontAwesomeIcon icon={faBars} size="lg" className="text-rose" />
+            <FontAwesomeIcon
+              icon={faBars}
+              size="xl"
+              className="text-[#D57B63] hover:text-white"
+            />
           )}
         </button>
       </div>
 
       {isOpen && (
-        <div className="fixed top-0 right-0 w-full h-full bg-charcoal text-warmWhite z-50 shadow-lg">
+        <div className="fixed top-0 right-0 w-full h-full bg-[#1C1A20] text-white z-50 shadow-lg">
           <div className="flex justify-end p-4">
-            <button onClick={() => setIsOpen(false)} className="text-warmWhite">
+            <button onClick={() => setIsOpen(false)} className="text-white">
               <FontAwesomeIcon icon={faTimes} size="lg" />
             </button>
           </div>
@@ -69,7 +69,7 @@ export default function Navbar() {
                   to={link.to}
                   smooth={true}
                   duration={500}
-                  className="hover:text-olive hover:text-xl transition-colors cursor-pointer"
+                  className="hover:text-[#D57B63] hover:text-xl transition-colors cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
