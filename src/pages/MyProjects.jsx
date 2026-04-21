@@ -18,22 +18,23 @@ export default function MyProjects() {
     },
 
     // UI/UX PROJECTS
+    // {
+    //   title: "UI/UX Case Study – Mobile App",
+    //   paragraph:
+    //     "User-centered mobile app design focused on usability, clean layout, and visual hierarchy.",
+    //   figmaLink:
+    //     "https://www.figma.com/design/lVGy36IlGxb7iGncpXzQkE/Practice--Chat-App-Homepage-Design--Copy-?node-id=107-2&t=wR42wDUwmRAQv4sR-1",
+    //   image: "/figma1.png",
+    // },
     {
-      title: "UI/UX Case Study – Mobile App",
+      title: "UI/UX Case Study – Website",
       paragraph:
-        "User-centered mobile app design focused on usability, clean layout, and visual hierarchy.",
+        "Website design created in Figma focusing on modern UI, responsiveness, and user flow.",
       figmaLink:
         "https://www.figma.com/design/lVGy36IlGxb7iGncpXzQkE/Practice--Chat-App-Homepage-Design--Copy-?node-id=107-2&t=wR42wDUwmRAQv4sR-1",
+      webflowLink: "https://chat-app-d9a4fe.webflow.io/",
       image: "/figma1.png",
     },
-    // {
-    //   title: "UI/UX Case Study – Website",
-    //   paragraph:
-    //     "Website design created in Figma focusing on modern UI, responsiveness, and user flow.",
-    //   figmaLink: "YOUR_FIGMA_LINK_2",
-    //   webflowLink: "YOUR_WEBFLOW_LINK",
-    //   image: "/ui2.png",
-    // },
 
     // NON-VISUAL PROJECTS
     {
