@@ -27,12 +27,12 @@ export default function MyProjects() {
     //   image: "/figma1.png",
     // },
     {
-      title: "UI/UX Case Study – Website",
+      title: "CallAsap - UI/UX",
       paragraph:
         "Website design created in Figma focusing on modern UI, responsiveness, and user flow.",
       figmaLink:
         "https://www.figma.com/design/lVGy36IlGxb7iGncpXzQkE/Practice--Chat-App-Homepage-Design--Copy-?node-id=107-2&t=wR42wDUwmRAQv4sR-1",
-      webflowLink: "https://chat-app-d9a4fe.webflow.io/",
+      webflowLink: "https://call-asap-by-ana.webflow.io/",
       image: "/figma1.png",
     },
 
